@@ -1,4 +1,4 @@
-let number = 12;
+let number = 0;
 
 function addNumbers() {
 	number = number + 1;
@@ -19,3 +19,12 @@ function subtractNumbers() {
 
 const subtraction = document.getElementById("subtract");
 subtraction.addEventListener("click", subtractNumbers);
+
+function resetNumbers() {
+	number = 0;
+	let sum = document.getElementById("number");
+	sum.innerHTML = number;
+}
+
+const reset = document.getElementById("reset");
+reset.addEventListener("click", resetNumbers);
